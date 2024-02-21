@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\Catalog\BrandController;
 use App\Http\Controllers\DashboardController;
 
+use App\Http\Controllers\SendWhatsAppController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         
     });
 
+    Route::get('/send-whatsapp', [SendWhatsAppController::class, 'index'])->name('send-whatsapp.index');
 
    
 
