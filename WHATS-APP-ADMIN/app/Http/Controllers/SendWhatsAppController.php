@@ -9,4 +9,12 @@ class SendWhatsAppController extends Controller
     public function index(){
         return view('pages.send-whats-app.list');
     }
+
+
+
+
+
+
+
+    ///////////////////////////
 }
